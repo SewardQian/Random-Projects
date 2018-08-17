@@ -105,5 +105,5 @@ function getindex(w,x,y){
 }
 
 function isInBound(w,h,x,y){
-	return (x>=0 && x<w && y>0 && y<h);
+	return (x>=0 && x<w && y>=0 && y<h);
 }
