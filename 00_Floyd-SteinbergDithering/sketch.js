@@ -2,7 +2,7 @@
 let imageName = 'Octocat.jpg'  //image name
 let resizeFactor = 2; //to resize the canvas
 let dotsize = 1 ;  //to resize the output
-let savePicture = false; //true to save the image throught browser download
+let savePicture = false; //true to save the image through browser download
 
 function preload(){
 	img = loadImage(imageName);
@@ -105,5 +105,5 @@ function getindex(w,x,y){
 }
 
 function isInBound(w,h,x,y){
-	return (x>=0 && x<w && y>0 && y<h);
+	return (x>=0 && x<w && y>=0 && y<h);
 }
