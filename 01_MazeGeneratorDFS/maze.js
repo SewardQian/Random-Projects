@@ -1,6 +1,7 @@
 class Node{
 	constructor(i,j){
 		this.visited = false;
+		this.backtracked = false;
 
 		this.i = i*10;
 		this.j = j*10;
@@ -13,7 +14,11 @@ class Node{
 	}
 
 	show(){
-		if(this.visited){
+		if (this.backtracked){
+			fill(0,0,255,150);
+			noStroke();
+			rect(this.i,this.j,10,10);
+		}else if(this.visited){
 			fill(255,0,255,100);
 			noStroke();
 			rect(this.i,this.j,10,10);
@@ -28,6 +33,10 @@ class Node{
 
 	visit(){
 		this.visited = true;
+	}
+
+	backtrack(){
+		this.backtracked = true;
 	}
 }
 

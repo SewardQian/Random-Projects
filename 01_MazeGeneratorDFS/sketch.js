@@ -29,6 +29,7 @@ function draw() {
 		} else {
 			//pop a cell from the stack
 			//make it the current 
+			maze.array[current.x][current.y].backtrack();
 			current = stack.pop();
 		}
 
