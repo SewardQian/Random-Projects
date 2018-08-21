@@ -26,10 +26,10 @@ public:
 
 	T findMin() const;
 	void findMin();
-	void insert();
-	void meld();
-	void decreaseKey();
-	void del();
+	void insert(T x);
+	void meld(PairingHeap<T> h2);
+	void decreaseKey(T delta,T x);
+	void del(T x);
 
 
 private:
@@ -44,6 +44,32 @@ private:
 #include <iostream>
 #include <string>
 using namespace std;
+
+
+template <typename T>
+void findMin(){
+
+}
+
+template <typename T>
+void insert(T x){
+
+}
+
+template <typename T>
+void meld(PairingHeap<T> h2){
+
+}
+
+template <typename T>
+void decreaseKey(T delta,T x){
+
+}
+
+template <typename T>
+void del(T x){
+	
+}
 
 
 
